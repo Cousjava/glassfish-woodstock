@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+ This program and the accompanying materials are made available under the
+ terms of the Eclipse Public License v. 2.0, which is available at
+ http://www.eclipse.org/legal/epl-2.0.
+
+This Source Code may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the
+Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+version 2 with the GNU Classpath Exception, which is available at
+https://www.gnu.org/software/classpath/license.html.
+
+SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+
+Copyright 2008 Sun Microsystems, Inc.
+Copyright [2018] Payara Services Ltd.
+  
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>org.eclipse.ee4j</groupId>
+        <artifactId>project</artifactId>
+        <version>1.0.5</version>
+        <relativePath />
+    </parent>
+    
+    <groupId>com.sun.woodstock</groupId>
+    <artifactId>webui-jsf-parent</artifactId>
+    <version>4.0.2.16-SNAPSHOT</version>
+    
+    <packaging>pom</packaging>
+    <name>Woodstock</name>
+    <description>Woodstock JSF components</description>
+    
+    
+    <url>https://github.com/eclipse-ee4j/glassfish-woodstock</url>
+    <issueManagement>
+        <url>https://github.com/eclipse-ee4j/glassfish-woodstock/issues</url>
+    </issueManagement>
+    
+    <inceptionYear>2007</inceptionYear>
+    
+    <licenses>
+        <license>
+            <name>EPL 2.0</name>
+            <url>http://www.eclipse.org/legal/epl-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+        <license>
+            <name>GPL2 w/ CPE</name>
+            <url>https://www.gnu.org/software/classpath/license.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    
+    <modules>
+        <module>annotations</module>
+        <module>themes</module>
+        <module>webui</module>
+    </modules>
+    
+    <repositories>
+        <repository>
+            <id>netbeans</id>
+            <name>Netbeans repository</name>
+            <url>http://bits.netbeans.org/nexus/content/groups/netbeans/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    
+    <dependencies>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.6</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>2.1</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-digester</groupId>
+            <artifactId>commons-digester</artifactId>
+            <version>1.5</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.0.4</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.faces.extensions</groupId>
+            <artifactId>jsf-extensions-common</artifactId>
+            <version>0.1</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.faces.extensions</groupId>
+            <artifactId>jsf-extensions-dynamic-faces</artifactId>
+            <version>0.1</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.woodstock.dependlibs</groupId>
+            <artifactId>dataprovider</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.woodstock.dependlibs</groupId>
+            <artifactId>portlet</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.woodstock.dependlibs</groupId>
+            <artifactId>json</artifactId>
+            <version>2.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.woodstock.dependlibs</groupId>
+            <artifactId>jh</artifactId>
+            <version>2.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.woodstock.dependlibs</groupId>
+            <artifactId>jhall</artifactId>
+            <version>2.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.woodstock.dependlibs</groupId>
+            <artifactId>jhbasic</artifactId>
+            <version>2.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>designtime</artifactId>
+            <version>RELEASE65</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Woodstock currently requires JDK7, due to its use of annotation processing -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <executions>
+                    <execution>
+                        <id>enforce-jdk-versions</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>(1.4,1.8)</version>
+                                    <message>Woodstock requires JDK7 to build</message>
+                                </requireJavaVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    
+</project>
