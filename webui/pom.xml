@@ -92,6 +92,116 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
     <build>
         <sourceDirectory>src/runtime</sourceDirectory>
         <plugins>
+            <!-- Use ANT to drive much of our custom build steps -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.sun.woodstock</groupId>
+                        <artifactId>webui-jsf-annotations-processor</artifactId>
+                        <version>${project.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.sun.woodstock</groupId>
+                        <artifactId>webui-jsf-annotations-library</artifactId>
+                        <version>${project.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.sun.woodstock.dependlibs</groupId>
+                        <artifactId>dataprovider</artifactId>
+                        <version>1.0</version>
+                    </dependency>
+                    <!-- <dependency>
+                        <groupId>org.netbeans.api</groupId>
+                        <artifactId>org-openide-util</artifactId>
+                        <version>RELEASE802</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.netbeans.api</groupId>
+                        <artifactId>org-openide-explorer</artifactId>
+                        <version>RELEASE802</version>
+                    </dependency> -->
+                    <dependency>
+                        <groupId>org.apache.velocity</groupId>
+                        <artifactId>velocity-engine-core</artifactId>
+                        <version>2.0</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>generate-sources</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        
+                        <configuration>
+                            <target>
+                                <!-- JAVA_HOME points to JDK on Mac, to JRE elsewhere. -->
+                                <condition property="apt.home" value="${java.home}" else="${java.home}/..">
+                                    <os family="mac"/>
+                                </condition>
+                                
+                                <path id="annotation-sourcepath">
+                                    <fileset dir="src/runtime">
+                                        <include name="com/sun/webui/jsf/component/*.java"/>
+                                        <include name="com/sun/webui/jsf/renderkit/html/*.java"/>
+                                        <include name="com/sun/webui/jsf/renderkit/ajax/*.java"/>
+                                        <include name="com/sun/webui/jsf/renderkit/designtime/*.java"/>
+                                        <include name="com/sun/webui/jsf/renderkit/widget/*.java"/>
+                                        <include name="com/sun/webui/jsf/faces/*.java"/>
+                                    </fileset>
+                                    <fileset dir="src/designtime">
+                                        <include name="com/sun/webui/jsf/design/CategoryDescriptors.java"/>
+                                    </fileset>
+                                </path>
+                                
+                                <get src="http://bits.netbeans.org/maven2/org/netbeans/api/org-openide-util/RELEASE802/org-openide-util-RELEASE802.jar" 
+                                     dest="lib/netbeans/org-openide-util-RELEASE802.jar" usetimestamp="true"/>
+                                <get src="http://bits.netbeans.org/maven2/org/netbeans/api/org-openide-explorer/RELEASE82/org-openide-explorer-RELEASE82.jar" 
+                                     dest="lib/netbeans/org-openide-explorer-RELEASE82.jar" usetimestamp="true"/>
+                                
+                                <!-- <path id="annotation-classpath">
+                                    <path refid="annotation-lib.jars"/>
+                                    <path refid="annotation-beaninfo.jars"/>
+                                    <path refid="annotation-processor.jars"/>
+                                    <path refid="propertyeditors.jars"/>
+                                    <path refid="jsf.jars"/>
+                                    <path refid="jsf-ri.jars"/>
+                                    <path refid="designtime.jars"/>
+                                    <path refid="dataprovider.jars"/>
+                                    <path refid="jsf-extension.jars"/>
+                                    <path refid="json.jars"/>
+                                    <path location="src/runtime"/>
+                                </path>
+                                <pathconvert property="apt.classpath">
+                                    <path refid="annotation-classpath"/>
+                                </pathconvert> -->
+                                
+                                <pathconvert property="apt.sourcepath" pathsep=" ">
+                                    <path refid="annotation-sourcepath"/>
+                                </pathconvert>
+                                <echo>Processing annotations.. </echo>                              
+                                <exec executable="${apt.home}/bin/apt">
+                                    <arg line="-s gen/beaninfo"/>
+                                    <arg line="-d gen/META-INF"/>
+                                    <arg line="-nocompile"/>
+                                    <arg value="-A generate.runtime"/>
+                                    <!--<arg value="-A namespace.uri=${taglib-uri}"/> -->
+                                    <arg value="-A namespace.prefix=ui"/>
+                                    <arg value="-A taglibdoc=src/runtime/conf/tag-descriptions.xml"/>
+                                    <arg value="-A localize"/>
+                                    <arg line="-factory com.sun.faces.mirror.FacesAnnotationProcessorFactory"/>
+                                    <arg line="${apt.sourcepath}"/>
+                                </exec>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -99,7 +209,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
                 <executions>
                     <execution>
                         <id>copy-module</id>
-                        <phase>validate</phase>
+                        <phase>process-resources</phase>
                         <goals>
                             <goal>copy-resources</goal>
                         </goals>
@@ -115,7 +225,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
                 </executions>
             </plugin>
             
-            <plugin>
+            <!-- <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
@@ -125,7 +235,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
                         
                     </archive>
                 </configuration>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 
