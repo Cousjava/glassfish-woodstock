@@ -29,7 +29,7 @@ import jakarta.faces.context.ResponseWriter;
 import jakarta.faces.application.FacesMessage;
 import com.sun.webui.html.HTMLAttributes;
 import com.sun.webui.html.HTMLElements;
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 
 import static com.sun.webui.jsf.util.JavaScriptUtilities.renderScripTag;
 import static com.sun.webui.jsf.util.JavaScriptUtilities.renderCall;

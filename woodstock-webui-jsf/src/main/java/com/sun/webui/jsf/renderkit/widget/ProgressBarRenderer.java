@@ -25,7 +25,7 @@ import java.io.IOException;
 import jakarta.faces.component.UIComponent;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.context.ResponseWriter;
-import javax.json.JsonObjectBuilder;
+import jakarta.json.JsonObjectBuilder;
 
 import static com.sun.webui.jsf.util.JsonUtilities.JSON_BUILDER_FACTORY;
 import static com.sun.webui.jsf.util.JsonUtilities.jsonValueOf;

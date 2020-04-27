@@ -25,7 +25,7 @@ import jakarta.faces.component.UIComponent;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.context.ResponseWriter;
 import jakarta.faces.event.ActionEvent;
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 
 import static com.sun.webui.jsf.util.ConversionUtilities.convertValueToString;
 import static com.sun.webui.jsf.util.JsonUtilities.JSON_BUILDER_FACTORY;

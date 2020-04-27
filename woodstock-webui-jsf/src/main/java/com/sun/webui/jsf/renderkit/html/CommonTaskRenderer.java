@@ -39,7 +39,7 @@ import com.sun.webui.jsf.component.ImageHyperlink;
 import com.sun.webui.jsf.component.ImageComponent;
 import com.sun.webui.jsf.component.Icon;
 import com.sun.webui.jsf.util.ComponentUtilities;
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.Map;
 import jakarta.faces.component.UIComponent;
 import jakarta.faces.context.FacesContext;
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 
 import static com.sun.webui.jsf.util.JsonUtilities.JSON_BUILDER_FACTORY;
 import static com.sun.webui.jsf.util.JsonUtilities.writeJsonObject;

@@ -30,7 +30,7 @@ import com.sun.webui.jsf.component.ListSelector;
 import com.sun.webui.theme.Theme;
 import com.sun.webui.jsf.theme.ThemeStyles;
 import com.sun.webui.jsf.util.LogUtil;
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 import static com.sun.webui.jsf.util.JavaScriptUtilities.renderCall;
 import static com.sun.webui.jsf.util.JavaScriptUtilities.renderCalls;
 import static com.sun.webui.jsf.util.JavaScriptUtilities.renderInitScriptTag;

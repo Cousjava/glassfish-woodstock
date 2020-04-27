@@ -22,8 +22,8 @@ import java.io.StringWriter;
 import jakarta.faces.component.UIComponent;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.context.ResponseWriter;
-import javax.json.JsonObject;
-import javax.json.JsonWriter;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonWriter;
 
 import static com.sun.webui.jsf.util.JsonUtilities.JSON_BUILDER_FACTORY;
 import static com.sun.webui.jsf.util.JsonUtilities.JSON_WRITER_FACTORY;

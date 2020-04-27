@@ -34,7 +34,7 @@ import com.sun.webui.jsf.theme.ThemeImages;
 import com.sun.webui.jsf.theme.ThemeStyles;
 import com.sun.webui.jsf.util.LogUtil;
 import com.sun.webui.jsf.util.MessageUtil;
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 
 import static com.sun.webui.jsf.util.JsonUtilities.JSON_BUILDER_FACTORY;
 import static com.sun.webui.jsf.util.RenderingUtilities.renderComponent;

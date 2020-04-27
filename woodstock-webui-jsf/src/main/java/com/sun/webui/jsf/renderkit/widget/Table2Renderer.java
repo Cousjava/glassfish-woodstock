@@ -24,10 +24,10 @@ import java.io.IOException;
 import java.util.Iterator;
 import jakarta.faces.component.UIComponent;
 import jakarta.faces.context.FacesContext;
-import javax.json.JsonObjectBuilder;
-import javax.json.Json;
-import javax.json.JsonArrayBuilder;
-import javax.json.JsonValue;
+import jakarta.json.JsonObjectBuilder;
+import jakarta.json.Json;
+import jakarta.json.JsonArrayBuilder;
+import jakarta.json.JsonValue;
 
 import static com.sun.webui.jsf.util.JsonUtilities.JSON_BUILDER_FACTORY;
 import static com.sun.webui.jsf.util.ThemeUtilities.getTheme;

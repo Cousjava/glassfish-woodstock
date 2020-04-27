@@ -30,7 +30,7 @@ import com.sun.webui.jsf.component.CommonTasksGroup;
 import com.sun.webui.jsf.component.CommonTasksSection;
 import com.sun.webui.jsf.component.StaticText;
 import java.util.Iterator;
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 
 import static com.sun.webui.jsf.util.JsonUtilities.JSON_BUILDER_FACTORY;
 import static com.sun.webui.jsf.util.RenderingUtilities.renderComponent;

@@ -39,7 +39,7 @@ import com.sun.webui.jsf.theme.ThemeStyles;
 import com.sun.webui.jsf.util.ClientSniffer;
 import com.sun.webui.jsf.util.LogUtil;
 import java.io.StringWriter;
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 
 import static com.sun.webui.jsf.util.JavaScriptUtilities.getDomNode;
 import static com.sun.webui.jsf.util.JsonUtilities.JSON_BUILDER_FACTORY;

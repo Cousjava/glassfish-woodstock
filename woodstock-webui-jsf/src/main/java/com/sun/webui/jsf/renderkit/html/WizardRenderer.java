@@ -31,7 +31,7 @@ import com.sun.webui.theme.Theme;
 import com.sun.webui.jsf.theme.ThemeStyles;
 import com.sun.webui.jsf.theme.ThemeImages;
 import jakarta.faces.render.ResponseStateManager;
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 
 import static com.sun.webui.jsf.util.JavaScriptUtilities.getModuleName;
 import static com.sun.webui.jsf.util.JavaScriptUtilities.renderInitScriptTag;

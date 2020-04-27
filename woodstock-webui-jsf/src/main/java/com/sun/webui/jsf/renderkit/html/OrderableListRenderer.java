@@ -26,7 +26,7 @@ import com.sun.webui.jsf.component.ListSelector;
 import com.sun.webui.jsf.component.OrderableList;
 import com.sun.webui.theme.Theme;
 import com.sun.webui.jsf.theme.ThemeStyles;
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 
 import static com.sun.webui.jsf.util.JavaScriptUtilities.getDomNode;
 import static com.sun.webui.jsf.util.JavaScriptUtilities.renderCall;
