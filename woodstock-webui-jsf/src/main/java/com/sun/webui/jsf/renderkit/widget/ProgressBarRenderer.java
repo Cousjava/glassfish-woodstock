@@ -22,9 +22,9 @@ import com.sun.webui.jsf.component.ProgressBar;
 import com.sun.webui.jsf.component.TextArea;
 import com.sun.webui.theme.Theme;
 import java.io.IOException;
-import javax.faces.component.UIComponent;
-import javax.faces.context.FacesContext;
-import javax.faces.context.ResponseWriter;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.context.ResponseWriter;
 import javax.json.JsonObjectBuilder;
 
 import static com.sun.webui.jsf.util.JsonUtilities.JSON_BUILDER_FACTORY;

@@ -29,10 +29,10 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
 import javax.servlet.http.HttpServletResponse;
 
-import javax.faces.component.UIComponent;
-import javax.faces.component.UIParameter;
-import javax.faces.context.FacesContext;
-import javax.faces.context.ResponseWriter;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.UIParameter;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.context.ResponseWriter;
 
 import com.sun.webui.html.HTMLAttributes;
 import com.sun.webui.html.HTMLElements;
@@ -42,7 +42,7 @@ import com.sun.webui.jsf.component.Icon;
 import com.sun.webui.jsf.theme.ThemeImages;
 import com.sun.webui.jsf.theme.ThemeStyles;
 import com.sun.webui.theme.Theme;
-import javax.faces.component.UINamingContainer;
+import jakarta.faces.component.UINamingContainer;
 
 /**
  * This class provides common methods for renderers.

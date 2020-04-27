@@ -24,11 +24,11 @@ import com.sun.webui.jsf.util.ComponentUtilities;
 
 import jakarta.el.MethodExpression;
 import jakarta.el.ValueExpression;
-import javax.faces.component.NamingContainer;
-import javax.faces.component.UIComponent;
-import javax.faces.component.UIOutput;
-import javax.faces.context.FacesContext;
-import javax.faces.convert.Converter;
+import jakarta.faces.component.NamingContainer;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.UIOutput;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.convert.Converter;
 
 /**
  * The Alert component is used to render an inline alert message.
@@ -91,7 +91,7 @@ public final class Alert extends UIOutput implements NamingContainer {
      * method. The method must take no parameters and return an outcome string.
      * The class that defines the method must implement the<br>
      * {@code java.io.Serializable} interface or
-     * {@code javax.faces.component.StateHolder} interface.</li>
+     * {@code jakarta.faces.component.StateHolder} interface.</li>
      * </ul>
      */
     @Property(name = "linkActionExpression",
@@ -473,7 +473,7 @@ public final class Alert extends UIOutput implements NamingContainer {
      * method. The method must take no parameters and return an outcome string.
      * The class that defines the method must implement the<br>
      * {@code java.io.Serializable} interface or
-     * {@code javax.faces.component.StateHolder} interface.</li>
+     * {@code jakarta.faces.component.StateHolder} interface.</li>
      * </ul>
      *
      * @return {@code jakarta.el.MethodExpression}
@@ -503,7 +503,7 @@ public final class Alert extends UIOutput implements NamingContainer {
      * method. The method must take no parameters and return an outcome string.
      * The class that defines the method must implement the<br>
      * {@code java.io.Serializable} interface or
-     * {@code javax.faces.component.StateHolder} interface.</li>
+     * {@code jakarta.faces.component.StateHolder} interface.</li>
      * </ul>
      *
      * @param newLinkActionExpression method expression

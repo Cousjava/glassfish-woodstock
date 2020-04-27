@@ -29,11 +29,11 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import jakarta.el.ValueExpression;
-import javax.faces.context.FacesContext;
-import javax.faces.component.NamingContainer;
-import javax.faces.component.UIComponent;
-import javax.faces.component.UIComponentBase;
-import javax.faces.component.UINamingContainer;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.component.NamingContainer;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.UIComponentBase;
+import jakarta.faces.component.UINamingContainer;
 
 /**
  * Component that represents a table.

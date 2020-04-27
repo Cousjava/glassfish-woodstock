@@ -24,8 +24,8 @@ import com.sun.webui.jsf.component.Table2RowGroup;
 import com.sun.webui.jsf.util.WidgetUtilities;
 import java.io.IOException;
 import java.util.Iterator;
-import javax.faces.component.UIComponent;
-import javax.faces.context.FacesContext;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
@@ -40,7 +40,7 @@ import static com.sun.webui.jsf.util.JsonUtilities.writeJsonObject;
 @Renderer(@Renderer.Renders(
         rendererType = "com.sun.webui.jsf.ajax.Table2RowGroup",
         componentFamily = "com.sun.webui.jsf.Table2RowGroup"))
-public final class Table2RowGroupRenderer extends javax.faces.render.Renderer {
+public final class Table2RowGroupRenderer extends jakarta.faces.render.Renderer {
 
     @Override
     public void encodeBegin(final FacesContext context,

@@ -49,7 +49,7 @@ import javax.help.search.SearchListener;
 import javax.help.search.SearchQuery;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeNode;
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 

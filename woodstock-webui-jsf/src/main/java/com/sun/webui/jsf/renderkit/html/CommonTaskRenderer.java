@@ -18,11 +18,11 @@ package com.sun.webui.jsf.renderkit.html;
 
 import java.io.IOException;
 import java.beans.Beans;
-import javax.faces.component.UIComponent;
-import javax.faces.context.FacesContext;
-import javax.faces.context.ResponseWriter;
-import javax.faces.component.UIParameter;
-import javax.faces.event.ActionEvent;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.context.ResponseWriter;
+import jakarta.faces.component.UIParameter;
+import jakarta.faces.event.ActionEvent;
 import com.sun.faces.annotation.Renderer;
 import com.sun.webui.jsf.util.ConversionUtilities;
 import com.sun.webui.jsf.util.ThemeUtilities;

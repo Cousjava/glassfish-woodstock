@@ -18,7 +18,7 @@ package com.sun.webui.jsf.example;
 import com.sun.webui.jsf.example.util.ExampleUtilities;
 import com.sun.data.provider.RowKey;
 import com.sun.webui.jsf.event.TableSelectPhaseListener;
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 import jakarta.el.ValueExpression;
 
 /**

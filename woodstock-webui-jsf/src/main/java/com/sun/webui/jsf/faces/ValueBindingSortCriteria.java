@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Map;
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 import jakarta.el.ValueExpression;
 import jakarta.el.ELContext;
 import com.sun.data.provider.RowKey;

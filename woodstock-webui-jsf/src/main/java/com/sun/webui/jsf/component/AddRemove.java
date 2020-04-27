@@ -38,9 +38,9 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import jakarta.el.ValueExpression;
-import javax.faces.FacesException;
-import javax.faces.component.UIComponent;
-import javax.faces.context.FacesContext;
+import jakarta.faces.FacesException;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
 
 /**
  * The AddRemove component is used to construct a list of selected items.

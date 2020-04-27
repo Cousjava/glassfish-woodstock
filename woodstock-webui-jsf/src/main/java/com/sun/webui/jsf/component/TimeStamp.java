@@ -19,9 +19,9 @@ import com.sun.faces.annotation.Component;
 import com.sun.faces.annotation.Property;
 
 import jakarta.el.ValueExpression;
-import javax.faces.component.UIOutput;
-import javax.faces.context.FacesContext;
-import javax.faces.convert.Converter;
+import jakarta.faces.component.UIOutput;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.convert.Converter;
 
 /**
  * The TimeStamp component is used to display a text string that contains a time

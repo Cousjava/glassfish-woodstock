@@ -26,10 +26,10 @@ import com.sun.webui.jsf.util.ThemeUtilities;
 import com.sun.webui.theme.Theme;
 import java.io.IOException;
 import jakarta.el.ValueExpression;
-import javax.faces.component.NamingContainer;
-import javax.faces.component.UIComponent;
-import javax.faces.component.UIComponentBase;
-import javax.faces.context.FacesContext;
+import jakarta.faces.component.NamingContainer;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.UIComponentBase;
+import jakarta.faces.context.FacesContext;
 
 /**
  * Component that represents various table headers, including sortable,

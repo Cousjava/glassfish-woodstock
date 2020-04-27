@@ -31,10 +31,10 @@ import com.sun.webui.jsf.component.TreeNode;
 import com.sun.webui.jsf.component.Tree;
 import com.sun.webui.jsf.util.ComponentUtilities;
 import java.io.IOException;
-import javax.faces.component.UIComponent;
-import javax.faces.context.FacesContext;
-import javax.faces.context.ResponseWriter;
-import javax.faces.event.ActionListener;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.context.ResponseWriter;
+import jakarta.faces.event.ActionListener;
 
 import com.sun.webui.html.HTMLAttributes;
 import com.sun.webui.html.HTMLElements;
@@ -44,7 +44,7 @@ import com.sun.webui.html.HTMLElements;
  */
 @Renderer(
         @Renderer.Renders(componentFamily = "com.sun.webui.jsf.TreeNode"))
-public class TreeNodeRenderer extends javax.faces.render.Renderer {
+public class TreeNodeRenderer extends jakarta.faces.render.Renderer {
 
     /**
      * This implementation is empty.

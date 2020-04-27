@@ -18,4 +18,4 @@
  * Provides basic BeanInfo implementations for the fundamental JSF 1.2 user
  * interface components.
  */
-package javax.faces.component;
+package jakarta.faces.component;

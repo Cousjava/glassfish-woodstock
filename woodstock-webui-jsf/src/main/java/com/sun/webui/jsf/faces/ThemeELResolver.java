@@ -31,7 +31,7 @@ import jakarta.el.ELResolver;
 import jakarta.el.ELContext;
 import jakarta.el.PropertyNotFoundException;
 import jakarta.el.PropertyNotWritableException;
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 
 /**
  * {@code PropertyResolver} implementation that passes calls to

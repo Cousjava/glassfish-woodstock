@@ -23,7 +23,7 @@ import java.util.List;
 import jakarta.el.ELResolver;
 import jakarta.el.ELContext;
 import jakarta.el.PropertyNotFoundException;
-import javax.faces.model.SelectItem;
+import jakarta.faces.model.SelectItem;
 import com.sun.data.provider.DataProvider;
 import com.sun.data.provider.DataProviderException;
 import com.sun.data.provider.FieldKey;

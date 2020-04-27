@@ -20,7 +20,7 @@ import com.sun.faces.annotation.Component;
 import com.sun.faces.annotation.Property;
 
 import jakarta.el.ValueExpression;
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 
 /**
  * The AlarmStatus component is used to display alarm information in the

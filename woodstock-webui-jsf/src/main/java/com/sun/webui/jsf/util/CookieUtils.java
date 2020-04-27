@@ -15,7 +15,7 @@
  */
 package com.sun.webui.jsf.util;
 
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 import javax.servlet.http.Cookie;
 
 /**

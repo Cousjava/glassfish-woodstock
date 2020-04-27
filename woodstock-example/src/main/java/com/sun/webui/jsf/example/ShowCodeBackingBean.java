@@ -17,7 +17,7 @@
 package com.sun.webui.jsf.example;
 
 import com.sun.webui.jsf.example.util.JavaHtmlConverter;
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 import com.sun.webui.jsf.example.util.MessageUtil;
 import com.sun.webui.jsf.util.LogUtil;
 import java.util.Map;

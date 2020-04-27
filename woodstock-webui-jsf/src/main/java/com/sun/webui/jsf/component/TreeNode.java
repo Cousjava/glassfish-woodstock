@@ -25,14 +25,14 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Stack;
 import java.io.Serializable;
-import javax.faces.component.UIComponent;
-import javax.faces.component.UIComponentBase;
-import javax.faces.context.FacesContext;
-import javax.faces.event.AbortProcessingException;
-import javax.faces.event.ActionEvent;
-import javax.faces.event.FacesEvent;
-import javax.faces.event.ActionListener;
-import javax.faces.component.NamingContainer;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.UIComponentBase;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.event.AbortProcessingException;
+import jakarta.faces.event.ActionEvent;
+import jakarta.faces.event.FacesEvent;
+import jakarta.faces.event.ActionListener;
+import jakarta.faces.component.NamingContainer;
 import jakarta.el.MethodExpression;
 import jakarta.el.ValueExpression;
 import com.sun.webui.jsf.util.LogUtil;
@@ -105,7 +105,7 @@ public class TreeNode extends UIComponentBase
      * method. The method must take no parameters and return an outcome string.
      * The class that defines the method must implement the
      * {@code java.io.Serializable} interface or
-     * {@code javax.faces.component.StateHolder} interface.</li>
+     * {@code jakarta.faces.component.StateHolder} interface.</li>
      * </ul>
      * <p>
      * In the Tree and TreeNode components, the action applies only when
@@ -127,7 +127,7 @@ public class TreeNode extends UIComponentBase
      * must take a single parameter that is an ActionEvent, and its return type
      * must be {@code void}. The class that defines the method must
      * implement the {@code java.io.Serializable} interface or
-     * {@code javax.faces.component.StateHolder} interface.
+     * {@code jakarta.faces.component.StateHolder} interface.
      *
      * <p>
      * In the TreeNode component, the method specified by the
@@ -139,7 +139,7 @@ public class TreeNode extends UIComponentBase
             displayName = "Action Listener Expression",
             category = "Advanced")
     @Property.Method(
-            signature = "void processAction(javax.faces.event.ActionEvent)")
+            signature = "void processAction(jakarta.faces.event.ActionEvent)")
     private MethodExpression actionListenerExpression;
 
     /**
@@ -337,7 +337,7 @@ public class TreeNode extends UIComponentBase
      * method. The method must take no parameters and return an outcome string.
      * The class that defines the method must implement the
      * {@code java.io.Serializable} interface or
-     * {@code javax.faces.component.StateHolder} interface.</li>
+     * {@code jakarta.faces.component.StateHolder} interface.</li>
      * </ul>
      * <p>
      * In the Tree and TreeNode components, the action applies only when
@@ -372,7 +372,7 @@ public class TreeNode extends UIComponentBase
      * method. The method must take no parameters and return an outcome string.
      * The class that defines the method must implement the
      * {@code java.io.Serializable} interface or
-     * {@code javax.faces.component.StateHolder} interface.</li>
+     * {@code jakarta.faces.component.StateHolder} interface.</li>
      * </ul>
      * <p>
      * In the Tree and TreeNode components, the action applies only when
@@ -397,7 +397,7 @@ public class TreeNode extends UIComponentBase
      * must take a single parameter that is an ActionEvent, and its return type
      * must be {@code void}. The class that defines the method must
      * implement the {@code java.io.Serializable} interface or
-     * {@code javax.faces.component.StateHolder} interface.
+     * {@code jakarta.faces.component.StateHolder} interface.
      *
      * <p>
      * In the TreeNode component, the method specified by the
@@ -417,7 +417,7 @@ public class TreeNode extends UIComponentBase
      * must take a single parameter that is an ActionEvent, and its return type
      * must be {@code void}. The class that defines the method must
      * implement the {@code java.io.Serializable} interface or
-     * {@code javax.faces.component.StateHolder} interface.
+     * {@code jakarta.faces.component.StateHolder} interface.
      *
      * <p>
      * In the TreeNode component, the method specified by the

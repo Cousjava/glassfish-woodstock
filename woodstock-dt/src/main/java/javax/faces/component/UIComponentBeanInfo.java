@@ -13,10 +13,10 @@
  *
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  */
-package javax.faces.component;
+package jakarta.faces.component;
 
 /**
- * BeanInfo for {@link javax.faces.component.UIComponent}.
+ * BeanInfo for {@link jakarta.faces.component.UIComponent}.
  *
  */
 public class UIComponentBeanInfo extends UIComponentBaseBeanInfo {

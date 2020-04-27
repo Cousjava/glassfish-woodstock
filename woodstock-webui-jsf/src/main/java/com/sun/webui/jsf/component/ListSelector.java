@@ -37,10 +37,10 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 import jakarta.el.ValueExpression;
-import javax.faces.FacesException;
-import javax.faces.component.NamingContainer;
-import javax.faces.component.UIComponent;
-import javax.faces.context.FacesContext;
+import jakarta.faces.FacesException;
+import jakarta.faces.component.NamingContainer;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
 
 /**
  * Base component for UI components that allow the user to make a selection from

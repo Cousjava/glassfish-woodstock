@@ -21,7 +21,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Locale;
 import java.util.Map;
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 import jakarta.el.ValueExpression;
 import com.sun.data.provider.FilterCriteria;
 import com.sun.data.provider.RowKey;

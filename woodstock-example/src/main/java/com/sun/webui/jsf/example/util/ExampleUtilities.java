@@ -17,8 +17,8 @@ package com.sun.webui.jsf.example.util;
 
 import jakarta.el.MethodExpression;
 import jakarta.el.ValueExpression;
-import javax.faces.context.FacesContext;
-import javax.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.component.UIComponent;
 
 /**
  * Common example utilities.

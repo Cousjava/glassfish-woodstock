@@ -22,8 +22,8 @@ import com.sun.webui.jsf.util.ThemeUtilities;
 import com.sun.webui.theme.Theme;
 import jakarta.el.MethodExpression;
 import jakarta.el.ValueExpression;
-import javax.faces.application.Application;
-import javax.faces.context.FacesContext;
+import jakarta.faces.application.Application;
+import jakarta.faces.context.FacesContext;
 
 /**
  * The HelpWindow component displays a link that opens a popup window for a help

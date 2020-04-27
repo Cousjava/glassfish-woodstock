@@ -17,8 +17,8 @@ package com.sun.webui.jsf.component;
 
 import com.sun.faces.annotation.Component;
 import com.sun.faces.annotation.Property;
-import javax.faces.context.FacesContext;
-import javax.faces.component.NamingContainer;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.component.NamingContainer;
 import jakarta.el.ValueExpression;
 
 /**
@@ -31,7 +31,7 @@ import jakarta.el.ValueExpression;
         instanceName = "commonTasksGroup",
         tagName = "commonTasksGroup")
 public final class CommonTasksGroup
-        extends javax.faces.component.UIComponentBase
+        extends jakarta.faces.component.UIComponentBase
         implements NamingContainer {
 
     /**
