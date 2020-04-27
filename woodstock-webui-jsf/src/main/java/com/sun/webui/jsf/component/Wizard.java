@@ -18,7 +18,7 @@ package com.sun.webui.jsf.component;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.NamingContainer;
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIComponentBase;

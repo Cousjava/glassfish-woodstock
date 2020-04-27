@@ -42,7 +42,7 @@ import java.util.List;
 import java.util.LinkedList;
 import java.util.Vector;
 
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.FacesException;
 import javax.faces.application.FacesMessage;
 import javax.faces.component.EditableValueHolder;

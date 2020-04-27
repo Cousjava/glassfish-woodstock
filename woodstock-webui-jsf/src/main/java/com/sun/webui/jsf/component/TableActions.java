@@ -28,7 +28,7 @@ import com.sun.webui.jsf.util.LogUtil;
 import com.sun.webui.jsf.util.ThemeUtilities;
 import com.sun.webui.theme.Theme;
 import java.io.IOException;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.context.FacesContext;
 import javax.faces.component.NamingContainer;
 import javax.faces.component.UIComponent;

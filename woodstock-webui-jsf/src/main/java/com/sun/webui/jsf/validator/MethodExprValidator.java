@@ -15,9 +15,9 @@
  */
 package com.sun.webui.jsf.validator;
 
-import javax.el.ELContext;
-import javax.el.ELException;
-import javax.el.MethodExpression;
+import jakarta.el.ELContext;
+import jakarta.el.ELException;
+import jakarta.el.MethodExpression;
 import javax.faces.application.FacesMessage;
 import javax.faces.component.StateHolder;
 import javax.faces.component.UIComponent;

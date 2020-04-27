@@ -27,7 +27,7 @@ import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 import javax.faces.convert.Converter;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.render.Renderer;
 
 import static com.sun.webui.jsf.util.RenderingUtilities.renderComponent;

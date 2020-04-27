@@ -22,7 +22,7 @@ import java.io.ObjectOutputStream;
 import java.util.Locale;
 import java.util.Map;
 import javax.faces.context.FacesContext;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import com.sun.data.provider.FilterCriteria;
 import com.sun.data.provider.RowKey;
 import com.sun.data.provider.TableDataProvider;

@@ -17,9 +17,9 @@
 package com.sun.webui.jsf.el;
 
 import javax.faces.component.StateHolder;
-import javax.el.MethodExpression;
-import javax.el.MethodInfo;
-import javax.el.ELContext;
+import jakarta.el.MethodExpression;
+import jakarta.el.MethodInfo;
+import jakarta.el.ELContext;
 import javax.faces.context.FacesContext;
 
 /**

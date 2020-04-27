@@ -22,8 +22,8 @@ import com.sun.webui.jsf.theme.ThemeImages;
 import com.sun.webui.jsf.util.ThemeUtilities;
 import com.sun.webui.jsf.util.ComponentUtilities;
 
-import javax.el.MethodExpression;
-import javax.el.ValueExpression;
+import jakarta.el.MethodExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.NamingContainer;
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIOutput;
@@ -99,7 +99,7 @@ public final class Alert extends UIOutput implements NamingContainer {
             displayName = "Link Action Method Expression",
             category = "Navigation")
     @Property.Method(signature = "java.lang.String action()")
-    private javax.el.MethodExpression linkActionExpression = null;
+    private jakarta.el.MethodExpression linkActionExpression = null;
 
     /**
      * The window (target) in which to load the link that is specified with
@@ -476,15 +476,15 @@ public final class Alert extends UIOutput implements NamingContainer {
      * {@code javax.faces.component.StateHolder} interface.</li>
      * </ul>
      *
-     * @return {@code javax.el.MethodExpression}
+     * @return {@code jakarta.el.MethodExpression}
      */
-    public javax.el.MethodExpression getLinkActionExpression() {
+    public jakarta.el.MethodExpression getLinkActionExpression() {
         if (this.linkActionExpression != null) {
             return this.linkActionExpression;
         }
         ValueExpression vb = getValueExpression("linkActionExpression");
         if (vb != null) {
-            return (javax.el.MethodExpression) vb
+            return (jakarta.el.MethodExpression) vb
                     .getValue(getFacesContext().getELContext());
         }
         return null;
@@ -510,7 +510,7 @@ public final class Alert extends UIOutput implements NamingContainer {
      * @see #getLinkActionExpression()
      */
     public void setLinkActionExpression(
-            final javax.el.MethodExpression newLinkActionExpression) {
+            final jakarta.el.MethodExpression newLinkActionExpression) {
 
         this.linkActionExpression = newLinkActionExpression;
     }
@@ -832,7 +832,7 @@ public final class Alert extends UIOutput implements NamingContainer {
         super.restoreState(context, values[0]);
         this.alt = (String) values[1];
         this.detail = (String) values[2];
-        this.linkActionExpression = (javax.el.MethodExpression)
+        this.linkActionExpression = (jakarta.el.MethodExpression)
                 restoreAttachedState(context, values[3]);
         this.linkTarget = (String) values[4];
         this.linkText = (String) values[5];

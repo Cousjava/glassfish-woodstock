@@ -30,7 +30,7 @@ import com.sun.webui.jsf.theme.ThemeStyles;
 import com.sun.webui.jsf.util.ThemeUtilities;
 import com.sun.webui.jsf.util.ConversionUtilities;
 import com.sun.webui.jsf.util.RenderingUtilities;
-import javax.el.MethodExpression;
+import jakarta.el.MethodExpression;
 
 /**
  * Renders a TabSet component.

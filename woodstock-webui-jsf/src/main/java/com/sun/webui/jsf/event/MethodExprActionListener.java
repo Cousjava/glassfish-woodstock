@@ -16,9 +16,9 @@
  */
 package com.sun.webui.jsf.event;
 
-import javax.el.ELContext;
-import javax.el.ELException;
-import javax.el.MethodExpression;
+import jakarta.el.ELContext;
+import jakarta.el.ELException;
+import jakarta.el.MethodExpression;
 import javax.faces.context.FacesContext;
 import javax.faces.component.StateHolder;
 import java.util.logging.Level;

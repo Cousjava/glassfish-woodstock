@@ -26,7 +26,7 @@ import com.sun.faces.annotation.Property;
 import com.sun.webui.theme.Theme;
 import com.sun.webui.jsf.util.ThemeUtilities;
 import com.sun.webui.jsf.util.ComponentUtilities;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 
 /**
  * The CommonTasksSection component is used to present a number of tasks that

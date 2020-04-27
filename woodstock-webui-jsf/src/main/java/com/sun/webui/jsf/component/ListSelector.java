@@ -36,7 +36,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.FacesException;
 import javax.faces.component.NamingContainer;
 import javax.faces.component.UIComponent;
@@ -591,7 +591,7 @@ public class ListSelector extends Selector implements ListManager,
         // We need to allow an empty string label since this
         // could mean that there is value binding and a
         // message bundle hasn't loaded yet, but there
-        // is a value binding since the javax.el never returns
+        // is a value binding since the jakarta.el never returns
         // null for a String binding.
         String labelString = getLabel();
         if (labelString == null) {

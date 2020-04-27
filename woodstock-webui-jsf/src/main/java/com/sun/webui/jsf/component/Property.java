@@ -19,7 +19,7 @@ import com.sun.faces.annotation.Component;
 import com.sun.webui.jsf.util.ComponentUtilities;
 import java.beans.Beans;
 import java.util.Iterator;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.EditableValueHolder;
 import javax.faces.component.NamingContainer;
 import javax.faces.component.UIComponent;

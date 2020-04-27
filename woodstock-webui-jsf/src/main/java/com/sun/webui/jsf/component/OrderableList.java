@@ -29,7 +29,7 @@ import com.sun.webui.jsf.util.ValueTypeEvaluator;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Iterator;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.NamingContainer;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;

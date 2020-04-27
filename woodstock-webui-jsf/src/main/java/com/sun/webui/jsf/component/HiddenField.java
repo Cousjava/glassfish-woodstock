@@ -20,7 +20,7 @@ import com.sun.faces.annotation.Component;
 import com.sun.faces.annotation.Property;
 import com.sun.webui.jsf.util.ConversionUtilities;
 import com.sun.webui.jsf.util.LogUtil;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.context.FacesContext;
 
 /**

@@ -21,7 +21,7 @@ import javax.faces.context.FacesContext;
 import com.sun.faces.annotation.Component;
 import com.sun.faces.annotation.Property;
 import com.sun.webui.jsf.util.ComponentUtilities;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 
 /**
  * The CommonTask component is used to create a single task within a

@@ -33,8 +33,8 @@ import javax.faces.event.ActionEvent;
 import javax.faces.event.FacesEvent;
 import javax.faces.event.ActionListener;
 import javax.faces.component.NamingContainer;
-import javax.el.MethodExpression;
-import javax.el.ValueExpression;
+import jakarta.el.MethodExpression;
+import jakarta.el.ValueExpression;
 import com.sun.webui.jsf.util.LogUtil;
 import com.sun.webui.jsf.event.ToggleActionListener;
 import com.sun.webui.jsf.util.ComponentUtilities;
@@ -117,7 +117,7 @@ public class TreeNode extends UIComponentBase
             isHidden = true,
             isAttribute = true)
     @Property.Method(signature = "java.lang.String action()")
-    private javax.el.MethodExpression actionExpression = null;
+    private jakarta.el.MethodExpression actionExpression = null;
 
     /**
      * The actionListenerExpression attribute is used to specify a method to
@@ -344,15 +344,15 @@ public class TreeNode extends UIComponentBase
      * attributes are used to define the tree and tree nodes. When facets are
      * used, the action attribute does not apply to the facets.
      * </p>
-     * @return {@code javax.el.MethodExpression}
+     * @return {@code jakarta.el.MethodExpression}
      */
-    public javax.el.MethodExpression getActionExpression() {
+    public jakarta.el.MethodExpression getActionExpression() {
         if (this.actionExpression != null) {
             return this.actionExpression;
         }
         ValueExpression vb = getValueExpression("actionExpression");
         if (vb != null) {
-            return (javax.el.MethodExpression) vb.getValue(getFacesContext()
+            return (jakarta.el.MethodExpression) vb.getValue(getFacesContext()
                     .getELContext());
         }
         return null;
@@ -384,7 +384,7 @@ public class TreeNode extends UIComponentBase
      * @param newActionExpression actionExpression
      */
     public void setActionExpression(
-            final javax.el.MethodExpression newActionExpression) {
+            final jakarta.el.MethodExpression newActionExpression) {
 
         this.actionExpression = newActionExpression;
     }
@@ -1231,9 +1231,9 @@ public class TreeNode extends UIComponentBase
     public void restoreState(final FacesContext context, final Object state) {
         Object[] values = (Object[]) state;
         super.restoreState(context, values[0]);
-        this.actionExpression = (javax.el.MethodExpression)
+        this.actionExpression = (jakarta.el.MethodExpression)
                 restoreAttachedState(context, values[1]);
-        this.actionListenerExpression = (javax.el.MethodExpression) values[2];
+        this.actionListenerExpression = (jakarta.el.MethodExpression) values[2];
         this.expanded = ((Boolean) values[3]);
         this.expandedSet = ((Boolean) values[4]);
         this.imageURL = (String) values[5];

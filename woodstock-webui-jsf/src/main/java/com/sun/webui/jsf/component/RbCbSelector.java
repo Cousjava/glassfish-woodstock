@@ -19,7 +19,7 @@ import com.sun.faces.annotation.Property;
 import com.sun.webui.jsf.util.ComponentUtilities;
 import com.sun.webui.jsf.util.ConversionUtilities;
 import java.io.IOException;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.UIComponent;
 import javax.faces.component.NamingContainer;
 import javax.faces.context.FacesContext;

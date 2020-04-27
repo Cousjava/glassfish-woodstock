@@ -19,7 +19,7 @@
  */
 package com.sun.webui.jsf.component;
 
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.UIComponentBase;
 import javax.faces.component.NamingContainer;
 import javax.faces.context.FacesContext;

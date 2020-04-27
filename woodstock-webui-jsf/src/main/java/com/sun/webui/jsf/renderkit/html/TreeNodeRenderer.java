@@ -18,7 +18,7 @@ package com.sun.webui.jsf.renderkit.html;
 import com.sun.faces.annotation.Renderer;
 import java.util.List;
 import java.util.Iterator;
-import javax.el.MethodExpression;
+import jakarta.el.MethodExpression;
 import com.sun.webui.jsf.component.ImageHyperlink;
 import com.sun.webui.jsf.component.Hyperlink;
 import com.sun.webui.jsf.component.IconHyperlink;

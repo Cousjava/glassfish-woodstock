@@ -19,7 +19,7 @@ import com.sun.faces.annotation.Component;
 import com.sun.faces.annotation.Property;
 import javax.faces.context.FacesContext;
 import javax.faces.component.NamingContainer;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 
 /**
  * The CommonTasksGroup component is used to group related CommonTasks in a

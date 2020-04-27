@@ -15,7 +15,7 @@
  */
 package com.sun.webui.jsf.component;
 
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.UIOutput;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;

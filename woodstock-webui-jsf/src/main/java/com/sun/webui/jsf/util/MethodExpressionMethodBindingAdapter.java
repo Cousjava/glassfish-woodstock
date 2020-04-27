@@ -16,10 +16,10 @@
 
 package com.sun.webui.jsf.util;
 
-import javax.el.MethodExpression;
-import javax.el.ELException;
-import javax.el.ELContext;
-import javax.el.MethodInfo;
+import jakarta.el.MethodExpression;
+import jakarta.el.ELException;
+import jakarta.el.ELContext;
+import jakarta.el.MethodInfo;
 import javax.faces.el.MethodBinding;
 import javax.faces.context.FacesContext;
 import javax.faces.component.StateHolder;

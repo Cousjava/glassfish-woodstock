@@ -19,7 +19,7 @@ import com.sun.faces.annotation.Component;
 import com.sun.faces.annotation.Property;
 import javax.faces.component.NamingContainer;
 import javax.faces.context.FacesContext;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 
 /**
  * Mastfooter component.

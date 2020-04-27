@@ -37,7 +37,7 @@ import java.util.Locale;
 import java.util.Set;
 import java.util.TreeMap;
 
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.FacesException;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;

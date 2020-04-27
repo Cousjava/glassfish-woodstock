@@ -239,7 +239,7 @@ public @interface Property {
 
     /**
      * Annotation that provides additional information about properties of type
-     * {@link javax.el.MethodExpression}, which are used to invoke a method at
+     * {@link jakarta.el.MethodExpression}, which are used to invoke a method at
      * run-time. All properties of type {@code MethodExpression} must be thus
      * annotated, and the annotation must specify either the signature of the
      * method to which method expressions are to be bound, or, a component event

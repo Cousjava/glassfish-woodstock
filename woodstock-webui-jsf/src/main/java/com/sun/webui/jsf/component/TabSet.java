@@ -19,8 +19,8 @@ import com.sun.faces.annotation.Property;
 import com.sun.faces.annotation.Component;
 import java.util.Stack;
 import javax.faces.component.NamingContainer;
-import javax.el.MethodExpression;
-import javax.el.ValueExpression;
+import jakarta.el.MethodExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.EditableValueHolder;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
@@ -573,7 +573,7 @@ public final class TabSet extends WebuiInput implements NamingContainer {
     public void restoreState(final FacesContext context, final Object state) {
         Object[] values = (Object[]) state;
         super.restoreState(context, values[0]);
-        this.actionListenerExpression = (javax.el.MethodExpression) values[1];
+        this.actionListenerExpression = (jakarta.el.MethodExpression) values[1];
         this.lastSelectedChildSaved = ((Boolean) values[2]);
         this.lastSelectedChildSavedSet = ((Boolean) values[3]);
         this.lite = ((Boolean) values[4]);

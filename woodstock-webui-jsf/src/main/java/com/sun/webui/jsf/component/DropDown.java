@@ -25,7 +25,7 @@ import com.sun.webui.jsf.util.MethodBindingMethodExpressionAdapter;
 import com.sun.webui.jsf.util.MethodExpressionMethodBindingAdapter;
 import java.util.Iterator;
 import java.util.Map;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.ActionSource2;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
@@ -35,7 +35,7 @@ import javax.faces.event.ActionListener;
 import javax.faces.event.FacesEvent;
 import javax.faces.event.PhaseId;
 import javax.faces.el.MethodBinding;
-import javax.el.MethodExpression;
+import jakarta.el.MethodExpression;
 
 /**
  * The DropDown component is used to display a drop down menu to allow users to

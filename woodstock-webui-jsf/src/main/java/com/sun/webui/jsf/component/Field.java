@@ -20,7 +20,7 @@ import com.sun.faces.annotation.Component;
 import com.sun.faces.annotation.Property;
 import com.sun.webui.jsf.util.ComponentUtilities;
 import com.sun.webui.jsf.util.LogUtil;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.NamingContainer;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
@@ -580,7 +580,7 @@ public class Field extends HiddenField
         // We need to allow an empty string label since this
         // could mean that there is value binding and a
         // message bundle hasn't loaded yet, but there
-        // is a value binding since the javax.el never returns
+        // is a value binding since the jakarta.el never returns
         // null for a String binding.
         if (labelString == null /*|| labelString.length() < 1*/) {
             if (DEBUG) {

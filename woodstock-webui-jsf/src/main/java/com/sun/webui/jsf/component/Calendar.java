@@ -23,7 +23,7 @@ import com.sun.webui.jsf.util.JavaScriptUtilities;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.TimeZone;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.component.NamingContainer;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;

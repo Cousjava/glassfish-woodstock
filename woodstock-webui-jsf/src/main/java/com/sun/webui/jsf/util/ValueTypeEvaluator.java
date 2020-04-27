@@ -21,7 +21,7 @@ import javax.faces.component.UIComponent;
 import javax.faces.component.ValueHolder;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.ConverterException;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 
 import com.sun.webui.jsf.component.Selector;
 

@@ -26,7 +26,7 @@ import com.sun.webui.theme.Theme;
 import java.beans.Beans;
 import java.util.Iterator;
 import java.util.List;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.application.FacesMessage;
 import javax.faces.component.EditableValueHolder;
 import javax.faces.component.NamingContainer;

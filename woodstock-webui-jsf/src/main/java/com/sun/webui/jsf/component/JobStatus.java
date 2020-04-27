@@ -21,7 +21,7 @@ import com.sun.webui.theme.Theme;
 import com.sun.webui.jsf.theme.ThemeImages;
 import com.sun.webui.jsf.theme.ThemeStyles;
 import com.sun.webui.jsf.util.ThemeUtilities;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.context.FacesContext;
 
 /**

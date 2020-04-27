@@ -19,7 +19,7 @@ import com.sun.faces.annotation.Component;
 import com.sun.faces.annotation.Property;
 import java.util.ArrayList;
 import java.util.Map;
-import javax.el.ValueExpression;
+import jakarta.el.ValueExpression;
 import javax.faces.context.FacesContext;
 
 /**

@@ -21,9 +21,9 @@ import javax.faces.component.StateHolder;
 import javax.faces.context.FacesContext;
 import javax.faces.el.EvaluationException;
 import javax.faces.el.MethodBinding;
-import javax.el.MethodExpression;
-import javax.el.MethodInfo;
-import javax.el.ELException;
+import jakarta.el.MethodExpression;
+import jakarta.el.MethodInfo;
+import jakarta.el.ELException;
 
 /**
  * Wrap a MethodExpression instance and expose it as a MethodBinding.
@@ -76,9 +76,9 @@ public final class MethodBindingMethodExpressionAdapter extends MethodBinding
         try {
             result = methodExpression.invoke(context.getELContext(),
                     params);
-        } catch (javax.el.MethodNotFoundException e) {
+        } catch (jakarta.el.MethodNotFoundException e) {
             throw new javax.faces.el.MethodNotFoundException(e);
-        } catch (javax.el.PropertyNotFoundException e) {
+        } catch (jakarta.el.PropertyNotFoundException e) {
             throw new EvaluationException(e);
         } catch (ELException e) {
             // look for the root cause and pass that to the
@@ -112,9 +112,9 @@ public final class MethodBindingMethodExpressionAdapter extends MethodBinding
             MethodInfo mi
                     = methodExpression.getMethodInfo(context.getELContext());
             result = mi.getReturnType();
-        } catch (javax.el.PropertyNotFoundException e) {
+        } catch (jakarta.el.PropertyNotFoundException e) {
             throw new javax.faces.el.MethodNotFoundException(e);
-        } catch (javax.el.MethodNotFoundException e) {
+        } catch (jakarta.el.MethodNotFoundException e) {
             throw new javax.faces.el.MethodNotFoundException(e);
         } catch (ELException e) {
             throw new javax.faces.el.MethodNotFoundException(e);

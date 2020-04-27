@@ -17,7 +17,7 @@
 package com.sun.webui.jsf.component;
 
 import com.sun.webui.jsf.event.MethodExprValueChangeListener;
-import javax.el.MethodExpression;
+import jakarta.el.MethodExpression;
 import javax.faces.component.UIInput;
 import javax.faces.convert.Converter;
 import javax.faces.event.ValueChangeListener;
