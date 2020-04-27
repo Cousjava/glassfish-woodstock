@@ -26,7 +26,7 @@ import java.io.InputStreamReader;
 import java.io.StringWriter;
 import java.io.Serializable;
 
-import javax.servlet.ServletContext;
+import jakarta.servlet.ServletContext;
 
 /**
  * Backing bean for the show code page.

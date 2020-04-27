@@ -25,7 +25,7 @@ import jakarta.faces.context.ResponseWriter;
 import jakarta.faces.FactoryFinder;
 import jakarta.faces.render.RenderKitFactory;
 import jakarta.faces.render.RenderKit;
-import javax.servlet.ServletRequest;
+import jakarta.servlet.ServletRequest;
 
 /**
  * This class provides common methods for widget renderers.

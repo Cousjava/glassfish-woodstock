@@ -33,8 +33,8 @@ import jakarta.faces.component.UIComponent;
 import jakarta.faces.component.UIParameter;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.context.ResponseWriter;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
 
 import static com.sun.webui.jsf.util.RenderingUtilities.isPortlet;
 import static com.sun.webui.jsf.util.RenderingUtilities.renderComponent;

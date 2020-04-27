@@ -38,8 +38,8 @@ import jakarta.faces.event.FacesEvent;
 import jakarta.faces.event.ValueChangeEvent;
 import jakarta.faces.event.ValueChangeListener;
 import jakarta.faces.validator.Validator;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * The Tree component is used to display a tree structure in the rendered HTML

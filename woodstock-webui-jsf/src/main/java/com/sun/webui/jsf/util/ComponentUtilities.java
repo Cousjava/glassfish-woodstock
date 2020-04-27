@@ -25,7 +25,7 @@ import jakarta.faces.context.FacesContext;
 import jakarta.faces.event.PhaseListener;
 import jakarta.faces.lifecycle.Lifecycle;
 import jakarta.faces.lifecycle.LifecycleFactory;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * Methods for general component manipulation.

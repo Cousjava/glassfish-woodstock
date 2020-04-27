@@ -16,7 +16,7 @@
 package com.sun.webui.jsf.util;
 
 import jakarta.faces.context.FacesContext;
-import javax.servlet.http.Cookie;
+import jakarta.servlet.http.Cookie;
 
 /**
  * Methods for working with cookies.

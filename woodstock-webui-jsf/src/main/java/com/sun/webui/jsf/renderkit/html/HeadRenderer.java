@@ -27,7 +27,7 @@ import com.sun.webui.theme.Theme;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 
 import static com.sun.webui.jsf.util.JavaScriptUtilities.renderHeaderScriptTags;
 import static com.sun.webui.jsf.util.RenderingUtilities.isPortlet;
